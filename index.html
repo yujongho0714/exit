@@ -825,6 +825,7 @@
 
 <button class="reset-btn" id="resetBtn">이 요일 체크 초기화</button>
 
+<script src="https://yujongho0714.github.io/allinone/jd-roster.js"></script>
 <script>
 const DEFAULT_DATA = /*DATA_START*/{"월":{"230":[],"330":[{"n":"김정현","d":"늘봄3반 · 방과후 바둑","t":"3:00"},{"n":"정이도","d":"늘봄4반","t":"3:00"},{"n":"이유빈","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"배찬우","d":"돌봄5반 · 방과후 실내체육","t":"3:00"},{"n":"김해솔","d":"돌봄1반","t":"3:05"},{"n":"이도훈","d":"돌봄1반","t":"3:05"},{"n":"김나연","d":"돌봄2반","ac":"픽업후 피아노","t":"3:05"},{"n":"이시아","d":"돌봄5반","t":"3:00"},{"n":"이라율","d":"돌봄5반","t":"3:00"},{"n":"이동율","d":"돌봄4반","t":"3:00"}],"430":[{"n":"유다현","d":"돌봄3반 · 방과후 배드민턴","t":"4:10"},{"n":"조예준","d":"돌봄4반 · 방과후 바둑","t":"4:10"},{"n":"김온유","d":"돌봄5반","t":"4:10"}]},"화":{"230":[{"n":"조예준","d":"돌봄4반","t":"2:10"}],"330":[{"n":"이주호","d":"늘봄3반","t":"3:00"},{"n":"정이도","d":"늘봄4반","t":"3:00"},{"n":"이유빈","d":"돌봄4반","t":"3:00"},{"n":"김정현","d":"늘봄3반 · 방과후 생명과학","t":"3:00"},{"n":"박윤","d":"방과후 · 생명과학","t":"3:00"},{"n":"배찬우","d":"방과후 · 토탈공예","t":"3:00"},{"n":"허윤","d":"돌봄5반","t":"3:00"},{"n":"김해솔","d":"돌봄1반","t":"3:05"},{"n":"이도훈","d":"돌봄1반","t":"3:05"},{"n":"이시아","d":"돌봄5반","t":"3:00"},{"n":"이라율","d":"돌봄5반","t":"3:00"},{"n":"이동율","d":"돌봄4반","t":"3:00"}],"430":[{"n":"유다현","d":"돌봄3반","t":"4:10"},{"n":"김온유","d":"돌봄5반 · 방과후 토탈공예","t":"4:10"}]},"수":{"230":[{"n":"박윤","d":"방과후 · 로봇과학 (2:24~25 늦게나옴)","t":"2:20"},{"n":"김정현","d":"늘봄3반 · 방과후 로봇과학 (2:24~25 늦게나옴)","t":"2:20"},{"n":"이주호","d":"늘봄3반","t":"2:20"},{"n":"정이도","d":"늘봄4반","t":"2:20"}],"330":[{"n":"이유빈","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"배찬우","d":"돌봄5반 · 방과후 실내체육","t":"3:00"},{"n":"이라율","d":"돌봄5반 · 자율 · 같이감","t":"3:00"},{"n":"이동율","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"이시아","d":"돌봄5반 · 자율 · 같이감","t":"3:00"},{"n":"김해솔","d":"돌봄1반","t":"3:05"},{"n":"이도훈","d":"돌봄1반","t":"3:05"},{"n":"김나연","d":"돌봄2반","ac":"픽업후 피아노","t":"3:05"},{"n":"권순언","d":"돌봄2반","ac":"픽업후 피아노","t":"3:05","g":"1학년"}],"430":[{"n":"유다현","d":"돌봄3반 · 방과후 아동요리","t":"4:10"},{"n":"조예준","d":"돌봄4반 · 방과후 로봇과학 (2:24~25 늦게나옴)","t":"4:10"},{"n":"김온유","d":"돌봄5반","t":"4:10"}]},"목":{"230":[{"n":"조예준","d":"돌봄4반","t":"2:10"}],"330":[{"n":"박윤","d":"늘봄2반","t":"3:00"},{"n":"이주호","d":"늘봄3반","t":"3:00"},{"n":"김정현","d":"늘봄3반","t":"3:00"},{"n":"정이도","d":"늘봄4반","t":"3:00"},{"n":"이유빈","d":"돌봄4반","t":"3:00"},{"n":"배찬우","d":"돌봄5반 · 방과후 실내체육","t":"3:00"},{"n":"이라율","d":"돌봄5반 · 자율","t":"3:00"},{"n":"이동율","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"김해솔","d":"돌봄1반","t":"3:05"},{"n":"이도훈","d":"돌봄1반","t":"3:05"},{"n":"이시아","d":"돌봄5반","t":"3:00"}],"430":[{"n":"권순언","d":"돌봄2반","ac":"픽업후 피아노","t":"4:10","g":"1학년"},{"n":"유다현","d":"돌봄3반","t":"4:10"}]},"금":{"230":[{"n":"박윤","d":"늘봄2반","t":"2:20"},{"n":"김정현","d":"늘봄3반","t":"2:20"},{"n":"이주호","d":"늘봄3반","t":"2:20"},{"n":"정이도","d":"늘봄4반","t":"2:20"}],"330":[{"n":"이유빈","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"배찬우","d":"돌봄5반 · 방과후 실내체육","t":"3:00"},{"n":"이시아","d":"돌봄5반 · 자율","t":"3:00"},{"n":"이동율","d":"돌봄4반","ac":"픽업후 피아노","t":"3:00"},{"n":"김해솔","d":"돌봄1반 · 방과후 컴퓨터","t":"3:05"},{"n":"이도훈","d":"돌봄1반","t":"3:05"},{"n":"김나연","d":"돌봄2반","ac":"픽업후 피아노","t":"3:05"}],"430":[{"n":"유다현","d":"돌봄3반 · 방과후 토탈공예","t":"4:10"},{"n":"조예준","d":"돌봄4반 · 방과후 컴퓨터","t":"4:10"},{"n":"김온유","d":"돌봄5반","t":"4:10"}]}}/*DATA_END*/;
 
@@ -920,7 +921,10 @@ async function deletePhoto(name){
   try{ await idbDeletePhoto(name); }catch(e){}
   try{ localStorage.removeItem('hawonPhotos_v1'); }catch(e){}
 }
-function getGrade(kid){ return (kid.g || GRADES[kid.n] || '').trim(); }
+/* 출결 앱 명단 연동: 학년은 출결 것, 퇴관한 아이는 퇴관한 달까지만 보이고 다음 달부터 빠져요 */
+let RG = {}, OUTN = new Set(), INR = null;
+function getGrade(kid){ return (RG[kid.n] || kid.g || GRADES[kid.n] || '').trim(); }
+const isOut = n => OUTN.has(n);
 
 function splitDetail(d){
   const parts = (d || '').split(' · ').map(s => s.trim()).filter(Boolean);
@@ -1441,7 +1445,7 @@ function buildDaySection(day){
     head.innerHTML = `<span class="time">${BAND_META[bandKey].time}</span><span class="label">${BAND_META[bandKey].label}</span>`;
     band.appendChild(head);
 
-    if(kids.length === 0 && !editMode){
+    if(!editMode && kids.filter(k => !isOut(k.n)).length === 0){
       const empty = document.createElement('div');
       empty.className = 'empty-note';
       empty.textContent = '해당 시간대 하원 아동 없음';
@@ -1450,6 +1454,7 @@ function buildDaySection(day){
       const list = document.createElement('ul');
       list.className = 'child-list';
       kids.forEach((kid, idx) => {
+        if(!editMode && isOut(kid.n)) return;
         list.appendChild(editMode ? buildEditRow(day, bandKey, kid, idx) : buildViewRow(day, bandKey, kid, idx));
       });
       band.appendChild(list);
@@ -1564,6 +1569,26 @@ function buildRosterPanel(){
   head.textContent = '요일마다 따로 추가할 필요 없이, 여기서 학생을 한 번만 추가하면 월~금 모든 요일에 자동으로 들어갑니다(기본 3시반부). 각 요일의 실제 하원 시간·반·방과후는 요일 탭 “✏️ 요일별 스케줄 편집”에서 정하거나, 안 다니는 요일은 그 탭에서 삭제하세요. 사진은 여기서 등록하면 모든 요일에 공통으로 표시됩니다.';
   wrap.appendChild(head);
 
+  if(window.JDR){
+    const box = document.createElement('div'); box.className = 'roster-head';
+    box.style.cssText = 'display:flex;flex-direction:column;gap:8px';
+    const top = document.createElement('div'); top.style.cssText = 'display:flex;align-items:center;gap:8px;flex-wrap:wrap';
+    top.appendChild(JDR.chip(null));
+    const t = document.createElement('span'); t.textContent = '학년은 출결 앱 것을 따라가고, 출결에서 퇴관한 아이는 다음 달부터 하원표에서 빠져요.'; t.style.cssText = 'font-size:12px;opacity:.8';
+    top.appendChild(t); box.appendChild(top);
+    const have = new Set(collectRoster());
+    const miss = JDR.active().filter(s => !have.has(s.name));
+    if(miss.length){
+      const d = document.createElement('details');
+      d.innerHTML = `<summary style="cursor:pointer;font-weight:700">출결 명단에만 있는 원생 ${miss.length}명 (도보 픽업하는 아이만 추가)</summary><div class="jdr-miss" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px"></div>`;
+      const w = d.querySelector('.jdr-miss');
+      miss.forEach(s => { const b = document.createElement('button'); b.type = 'button'; b.className = 'tool-btn'; b.textContent = '+ ' + s.name + ' · ' + (s.grade || '학년?');
+        b.onclick = () => { if(addStudentToAllDays(s.name, s.grade)) renderDay(); }; w.appendChild(b); });
+      box.appendChild(d);
+    }
+    wrap.appendChild(box);
+  }
+
   const roster = collectRoster();
   const card = document.createElement('div');
   card.className = 'roster-card';
@@ -1598,6 +1623,10 @@ function buildRosterPanel(){
         </div>
         <button class="del-btn" type="button" title="전체 요일에서 삭제">×</button>
       `;
+      if(INR){
+        const tag = isOut(name) ? '퇴관 · 하원표에서 빠짐' : !INR.has(name) ? '출결 명단에 없음' : '';
+        if(tag){ const sp = document.createElement('span'); sp.textContent = tag; sp.style.cssText = 'font-size:11px;font-weight:700;color:#b42318;white-space:nowrap'; row.querySelector('.roster-fields').appendChild(sp); }
+      }
       const nameIn = row.querySelector('.r-name');
       const gradeIn = row.querySelector('.r-grade');
       nameIn.addEventListener('change', () => {
@@ -1805,6 +1834,14 @@ async function init(){
   // 새로 합쳐진 사진을 저장소에도 반영해서 다음에 열 때도 유지되게 한다
   try{ await idbSaveAllPhotos(PHOTOS); }catch(e){}
   renderDay();
+  if(window.JDR) JDR.on(L => {
+    const act = L.filter(s => !s.out), cnt = {};
+    act.forEach(s => cnt[s.name] = (cnt[s.name] || 0) + 1);
+    RG = {}; act.forEach(s => { if(cnt[s.name] === 1 && s.grade) RG[s.name] = s.grade; });
+    INR = new Set(act.map(s => s.name));
+    OUTN = new Set(L.filter(s => s.out && !INR.has(s.name)).map(s => s.name));
+    if(!editMode || rosterMode) renderDay();
+  });
 }
 init();
 </script>
